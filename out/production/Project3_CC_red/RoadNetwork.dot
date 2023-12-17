@@ -1,0 +1,13 @@
+graph RoadNetwork{
+
+    Seattle -- "Los Angeles"[distance=1137];
+    Seattle -- Minneapolis[distance=1705];
+    Minneapolis -- Madison[distance=269];
+    Madison -- Chicago[distance=173];
+    Chicago -- "Los Angeles"[distance=2207];
+    Chicago -- "Washington DC"[distance=701];
+    Chicago -- "New York"[distance=770];
+    "New York" -- "Washington DC"[distance=226];
+    "Los Angeles" -- "Washington DC"[distance=2668];
+
+}

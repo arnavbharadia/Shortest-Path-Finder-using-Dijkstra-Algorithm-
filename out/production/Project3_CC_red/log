@@ -1,0 +1,62 @@
+Script started on 2022-12-08 21:20:13+00:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="184" LINES="52"]
+[?2004h]0;agkasturi@instance-2: ~/Project3_CC_red[01;32magkasturi@instance-2[00m:[01;34m~/Project3_CC_red[00m$ git status
+[?2004lOn branch FrontendDeveloper
+Your branch is ahead of 'origin/FrontendDeveloper' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mlog[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+[?2004h]0;agkasturi@instance-2: ~/Project3_CC_red[01;32magkasturi@instance-2[00m:[01;34m~/Project3_CC_red[00m$ git log -1
+[?2004l[?1h=[33mcommit de97dab6aa91dae87be080ccb13f4f93bd2fc795[m[33m ([m[1;36mHEAD -> [m[1;32mFrontendDeveloper[m[33m)[m[m
+Author: Ansh Kasturi <agkasturi@wisc.edu>[m
+Date:   Thu Dec 8 21:19:09 2022 +0000[m
+[m
+    Changed Makefile from runFrontendDeveloperTests to runTests[m
+[K[?1l>[?2004h]0;agkasturi@instance-2: ~/Project3_CC_red[01;32magkasturi@instance-2[00m:[01;34m~/Project3_CC_red[00m$ make clean
+[?2004lrm *.class
+rm: cannot remove '*.class': No such file or directory
+make: *** [Makefile:12: clean] Error 1
+[?2004h]0;agkasturi@instance-2: ~/Project3_CC_red[01;32magkasturi@instance-2[00m:[01;34m~/Project3_CC_red[00m$ ls
+[?2004lFrontendDeveloperBackendPlaceholder.java  FrontendDeveloperValidatorPlaceholder.java  ICityBackend.java    ITripFrontend.java  TextUITester.java  [0m[01;31mjunit5.jar[0m
+FrontendDeveloperTests.java               GraphADT.java                               ICityValidator.java  Makefile            TripFrontend.java  log
+[?2004h]0;agkasturi@instance-2: ~/Project3_CC_red[01;32magkasturi@instance-2[00m:[01;34m~/Project3_CC_red[00m$ maek [K[K[Kke runTests 
+[?2004ljavac TextUITester.java
+javac TripFrontend.java
+javac FrontendDeveloperBackendPlaceholder.java
+javac FrontendDeveloperValidatorPlaceholder.java
+javac -cp .:junit5.jar FrontendDeveloperTests.java
+java -jar junit5.jar --scan-classpath -cp . -n FrontendDeveloperTests
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+[36m╷[0m
+[36m├─[0m [36mJUnit Jupiter[0m [32m✔[0m
+[36m│  └─[0m [36mFrontendDeveloperTests[0m [32m✔[0m
+[36m│     ├─[0m [34mtest1()[0m [32m✔[0m
+[36m│     ├─[0m [34mtest2()[0m [32m✔[0m
+[36m│     ├─[0m [34mtest3()[0m [32m✔[0m
+[36m│     ├─[0m [34mtest4()[0m [32m✔[0m
+[36m│     └─[0m [34mtest5()[0m [32m✔[0m
+[36m└─[0m [36mJUnit Vintage[0m [32m✔[0m
+
+Test run finished after 172 ms
+[         3 containers found      ]
+[         0 containers skipped    ]
+[         3 containers started    ]
+[         0 containers aborted    ]
+[         3 containers successful ]
+[         0 containers failed     ]
+[         5 tests found           ]
+[         0 tests skipped         ]
+[         5 tests started         ]
+[         0 tests aborted         ]
+[         5 tests successful      ]
+[         0 tests failed          ]
+
+[?2004h]0;agkasturi@instance-2: ~/Project3_CC_red[01;32magkasturi@instance-2[00m:[01;34m~/Project3_CC_red[00m$ exit
+[?2004lexit
+
+Script done on 2022-12-08 21:21:09+00:00 [COMMAND_EXIT_CODE="0"]
